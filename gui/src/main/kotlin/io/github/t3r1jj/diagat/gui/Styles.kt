@@ -16,7 +16,8 @@ class Styles : Stylesheet() {
 
     init {
         welcomeScreen {
-            padding = box(10.px)
+            prefWidth = 800.px
+            prefHeight = 600.px
             backgroundColor += LinearGradient(0.0, 0.0, 0.0, 1.0, true, CycleMethod.NO_CYCLE, Stop(0.0, c("#028aff")), Stop(1.0, c("#003780")))
             heading {
                 fontSize = 3.em
@@ -29,6 +30,7 @@ class Styles : Stylesheet() {
                     fontSize = 22.px
                 }
             }
+
         }
     }
 }

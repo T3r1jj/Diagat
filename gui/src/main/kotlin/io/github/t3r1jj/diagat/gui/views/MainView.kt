@@ -1,23 +1,19 @@
-package io.github.t3r1jj.diagat.gui;
+package io.github.t3r1jj.diagat.gui.views
 
-import javafx.scene.control.Alert.AlertType.INFORMATION
+import io.github.t3r1jj.diagat.gui.Styles
+import kfoenix.jfxlistview
 import tornadofx.*
 
 class MainView : View("Hello TornadoFX") {
-    override val root = borderpane {
+    var menuItems = mutableListOf("Start", "Save", "Save As", "Options", "About", "Exit").observable()
+
+
+    override val root = pane {
         addClass(Styles.welcomeScreen)
-        top {
-            stackpane {
-                label(title).addClass(Styles.heading)
-            }
-        }
-        center {
-            stackpane {
-                addClass(Styles.content)
-                button("Click me") {
-                    setOnAction {
-                        alert(INFORMATION, "Well done!", "You clicked me!")
-                    }
+        stackpane {
+            borderpane {
+                jfxlistview(menuItems) {
+                    depth = 3
                 }
             }
         }

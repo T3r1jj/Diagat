@@ -12,3 +12,8 @@ I have found out [a related issue](https://bitbucket.org/scenicview/scenic-view/
 The new version with merged PR doesn't seem to be officially released yet.
 
 *scenicviewpatch.jar* should be placed inside *gui* directory as it's being launched from the code atm.
+
+##### Issues
+
+- Kotlin tests are marked red in IDEA (Symbol is declared in module junit which current module does not depend on) - [tracked issue](https://youtrack.jetbrains.com/issue/KT-26037).
+- *mvn clean test* fails with an error (but can be ran from within IDEA) - [similar issue](https://issues.apache.org/jira/browse/MCOMPILER-342)

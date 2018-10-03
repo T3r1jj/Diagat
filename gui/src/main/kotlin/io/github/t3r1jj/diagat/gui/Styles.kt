@@ -13,6 +13,7 @@ class Styles : Stylesheet() {
         val content by cssclass()
         val heading by cssclass()
         val specivicView by cssclass()
+        val primaryText by cssclass()
     }
 
     init {
@@ -32,7 +33,12 @@ class Styles : Stylesheet() {
                 }
             }
             specivicView {
-                backgroundColor += Color.DARKGRAY
+                backgroundColor += Color.WHITE
+            }
+            primaryText {
+                textFill = Color.WHITE
+                fontWeight = FontWeight.BOLD
+                backgroundColor += Color.WHEAT
             }
         }
     }

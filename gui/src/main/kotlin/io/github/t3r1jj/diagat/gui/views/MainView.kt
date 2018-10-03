@@ -1,13 +1,14 @@
 package io.github.t3r1jj.diagat.gui.views
 
+import io.github.t3r1jj.diagat.gui.MainController
 import io.github.t3r1jj.diagat.gui.Styles
+import javafx.event.EventHandler
 import javafx.scene.layout.Priority
 import kfoenix.jfxlistview
 import tornadofx.*
 
 class MainView : View("Hello TornadoFX") {
-    var menuItems = mutableListOf("Start", "Save", "Save As", "Options", "About", "Exit").observable()
-    var startView = StartView()
+    val controller = MainController()
 
     override val root = borderpane {
         addClass(Styles.welcomeScreen)
@@ -16,18 +17,21 @@ class MainView : View("Hello TornadoFX") {
                 gridpaneConstraints {
                     vgrow = Priority.ALWAYS
                 }
-                jfxlistview(menuItems) {
+                jfxlistview(controller.menuViews) {
                     anchorpaneConstraints {
                         topAnchor = 0
                         rightAnchor = 0
                         bottomAnchor = 0
                         leftAnchor = 0
                     }
+                    onMouseClicked = EventHandler {
+                        controller.menuView.setValue(selectionModel.selectedItem)
+                    }
                 }
             }
         }
         center {
-            this += startView.root
+            this += controller.menuView.value.root
         }
     }
 }

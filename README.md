@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/T3r1jj/Diagat.svg?style=svg)](https://circleci.com/gh/T3r1jj/Diagat)
+
 Learning new java features (**JDK 11**) like modules/jlink and new technologies like RxJava.
 
 Current project setup inclues: java, kotlin, rxkotlinfx, tornadofx, fontawesomefx, jfoenix, kfoenix, testfx, junit5.

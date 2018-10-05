@@ -1,4 +1,6 @@
-[![CircleCI](https://circleci.com/gh/T3r1jj/Diagat.svg?style=svg)](https://circleci.com/gh/T3r1jj/Diagat)
+[![CircleCI](https://circleci.com/gh/T3r1jj/Diagat/tree/master.svg?style=svg)](https://circleci.com/gh/T3r1jj/Diagat/tree/master)
+[![codecov](https://codecov.io/gh/T3r1jj/Diagat/branch/master/graph/badge.svg)](https://codecov.io/gh/T3r1jj/Diagat)
+
 
 Learning new java features (**JDK 11**) like modules/jlink and new technologies like RxJava.
 

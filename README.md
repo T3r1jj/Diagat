@@ -15,5 +15,6 @@ The new version with merged PR doesn't seem to be officially released yet.
 
 ##### Issues
 
-- Kotlin tests are marked red in IDEA (Symbol is declared in module junit which current module does not depend on) - [tracked issue](https://youtrack.jetbrains.com/issue/KT-26037).
-- *mvn clean test* fails with an error (but can be ran from within IDEA) - [similar issue](https://issues.apache.org/jira/browse/MCOMPILER-342) and [another one](https://issues.apache.org/jira/browse/MDEP-613?jql=priority%20%3D%20Major%20AND%20text%20~%20%22Unsupported%20class%20file%20%20version%2055%22)
+- **[multi module]** Kotlin tests are marked red in IDEA (Symbol is declared in module junit which current module does not depend on) - [tracked issue](https://youtrack.jetbrains.com/issue/KT-26037).
+- **[JDK11]** *mvn clean test* fails with an error (but can be ran from within IDEA) - [similar issue](https://issues.apache.org/jira/browse/MCOMPILER-342) and [another one](https://issues.apache.org/jira/browse/MDEP-613?jql=priority%20%3D%20Major%20AND%20text%20~%20%22Unsupported%20class%20file%20%20version%2055%22)
+- **[multi module]** [mvn dependency:go-offline does not find dependencies in multi-module](https://issues.apache.org/jira/browse/MDEP-516) which requires additional *package* step, slowing down the build process. 

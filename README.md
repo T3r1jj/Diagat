@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/T3r1jj/Diagat/tree/master.svg?style=svg)](https://circleci.com/gh/T3r1jj/Diagat/tree/master)
+[![CircleCI](https://circleci.com/gh/T3r1jj/Diagat/tree/master.svg?style=svg&circle-token=786118bb29f7ea8fc841aee1e410aad21c901837)](https://circleci.com/gh/T3r1jj/Diagat/tree/master)
 [![codecov](https://codecov.io/gh/T3r1jj/Diagat/branch/master/graph/badge.svg)](https://codecov.io/gh/T3r1jj/Diagat)
 
 
